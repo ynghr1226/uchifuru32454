@@ -27,7 +27,7 @@
         <%= link_to '削除', lesson_path(@lesson.id), method: :delete, class:'item-destroy' %>
         <%# 商品が売れていない場合はこちらを表示しましょう %>
         <% else %>
-          <%= link_to '購入画面に進む', item_orders_path(@lesson.id) ,class:"item-red-btn"%>
+          <%= link_to '購入画面に進む', lesson_orders_path(@lesson.id) ,class:"item-red-btn"%>
       <% end %>
         <%# //商品が売れていない場合はこちらを表示しましょう %>
   <% end %>
