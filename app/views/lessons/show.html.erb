@@ -20,10 +20,6 @@
     </div>
 
     
-  
-
-
- 
   <% if user_signed_in? %>
       <% if current_user.id == @lesson.user_id  %>
         <%= link_to '商品の編集', edit_lesson_path(@lesson.id), method: :get, class: "item-red-btn" %>

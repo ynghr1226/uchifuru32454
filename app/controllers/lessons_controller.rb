@@ -22,28 +22,28 @@ class LessonsController < ApplicationController
     def show
     end
   
-    # def edit
-    #   redirect_to action: :index unless @item.user_id == current_user.id
-    # end
+    def edit
+      redirect_to action: :index unless @lesson.user_id == current_user.id
+    end
   
-    # def update
-    #   if current_user.id == @item.user.id
-    #     if @item.update(item_params)
-    #       redirect_to action: :show
-    #     else
-    #       render :edit
-    #     end
-    #   else
-    #     redirect_to root_path
-    #   end
-    # end
+    def update
+      if current_user.id == @lesson.user.id
+        if @lesson.update(lesson_params)
+          redirect_to action: :show
+        else
+          render :edit
+        end
+      else
+        redirect_to root_path
+      end
+    end
   
-    # def destroy
-    #   if current_user.id == @item.user.id
-    #     @item.destroy
-    #     redirect_to root_path
-    #   end
-    # end
+    def destroy
+      if current_user.id == @lesson.user.id
+        @lesson.destroy
+        redirect_to root_path
+      end
+    end
   
     private
   
