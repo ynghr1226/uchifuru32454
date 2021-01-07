@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
 before_action :set_action
-# before_action :sold_out
+before_action :sold_out
 before_action :authenticate_user!
 
 def index
@@ -44,8 +44,8 @@ def set_action
   @lesson = Lesson.find(params[:lesson_id])
 end
 
-# def sold_out
-#   redirect_to root_path if @lesson.order.present?
-# end
+def sold_out
+  redirect_to root_path if @lesson.order.present?
+end
 end
 

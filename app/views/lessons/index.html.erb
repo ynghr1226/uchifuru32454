@@ -133,7 +133,11 @@
             <div class='item-img-content'>
               <%= image_tag lesson.image, class: "item-img" %>
 
-            <%# orderが出来次第soldaut表記 %>
+            <% if lesson.order.present? %>
+              <div class='sold-out'>
+                <span>Sold Out!!</span>
+              </div>
+              <% end %>
             
 
             </div>
