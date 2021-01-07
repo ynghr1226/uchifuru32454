@@ -25,7 +25,7 @@
 | prefecture_id   | integer    | null: false                    |
 | date            | date       | null: false                    |
 | url             | string     | null: false                    |
-| capacity        | integer    | null: false                    |
+| capacity_id     | integer    | null: false                    |
 | price           | integer    | null: false                    |
 | user            | references | null: false, foreign_key: true |
 
