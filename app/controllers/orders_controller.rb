@@ -12,7 +12,7 @@ def index
 end
 
 def create
-    binding.pry
+
   @order_adress = OrderAdress.new(order_params)
   if @order_adress.valid?
     pay_lesson
@@ -45,7 +45,10 @@ def set_action
 end
 
 def sold_out
-  redirect_to root_path if @lesson.order.present?
+  @stock = Order.where(lesson_id: @lesson.id).count
+    if @stock >= @lesson.capacity.id
+      redirect_to root_path
+    end
 end
 end
 

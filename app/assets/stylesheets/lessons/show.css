@@ -1,5 +1,7 @@
 /* 商品の概要 */
 
+
+
 .item-show {
   background-color: #f8f8f8;
   width: 100vw;
@@ -11,30 +13,45 @@
 
 .item-box {
   background-color: #FFF;
-  width: 70vw;
-  min-width: 1200px;
-  padding: 10vh 15vw;
+  width: 80vw;
+  max-width: 780px;
+  padding: 10vh 3vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top:30px;
+}
+
+.prefecture-box{
+  position: absolute;
+  top:0;
+  background-color:rgb(240, 102, 125);
+  padding:5px 10px;
+  left:20px;
+  color: #FFF;
+  font-size:14px;
+  margin-bottom:20px;
+
 }
 
 .item-box>.name {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
+  color: #666666;
 }
 
 .item-box-img {
-  height: 50vh;
-  width: 60vw;
-  min-height: 500px;
-  background-color: rgb(205, 202, 202);
+  height: 60vh;
+  width: 80vw;
+  min-height: 450px;
   object-fit: contain;
+  max-width: 100%;
 }
 
 .item-price-box {
-  margin: 25px 0px;
+  margin: 10px 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -46,18 +63,19 @@
 }
 
 .item-price-box>.item-postage {
-  font-size: 16px;
+  font-size: 30px;
+  color: #666666;
 }
 
 
 .item-red-btn {
   text-align: center;
-  background-color: #ea352d;
+  background-color: #ee7b96;
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
   margin: 20px 0px;
-  padding: 2vh 10vw;
+  padding: 2vh 100px;
 }
 
 .or-text {
@@ -80,7 +98,7 @@
 
 .detail-table {
   margin-bottom: 30px;
-  width: 100%;
+  width: 90%;
 }
 
 .detail-item {
@@ -203,4 +221,25 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
+}
+
+.introduction{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  padding-top: 40px;
+}
+.introduction-title{
+  font-size: 20px;
+  color:#ee7b96;
+}
+
+.introduction p{
+font-size:15px;
+}
+
+.user-title{
+  margin-bottom:30px;
+  font-size: 20px;
 }

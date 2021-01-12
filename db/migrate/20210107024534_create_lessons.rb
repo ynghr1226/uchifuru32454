@@ -3,12 +3,17 @@ class CreateLessons < ActiveRecord::Migration[6.0]
     create_table :lessons do |t|
       t.string  :name,             null: false
       t.text    :introduction,     null: false
-      t.integer :category_id,      null: false
-      t.integer :condition_id,     null: false
-      t.integer :delivery_fee_id,  null: false
       t.integer :prefecture_id,    null: false
-      t.integer :ship_date_id,     null: false
       t.integer :price,            null: false
+
+
+      t.text    :delivery,         null: false
+      t.text    :bring,            null: false
+      t.text    :recipe,           null: false
+      t.text    :flow,             null: false
+      t.string :eventday,         null: false
+      t.string :deadline,         null: false
+      t.integer :capacity_id,      null: false
       t.references :user,          foreign_key: true
 
 

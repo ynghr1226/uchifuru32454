@@ -48,8 +48,7 @@ class LessonsController < ApplicationController
     private
   
     def lesson_params
-      params.require(:lesson).permit(:name, :introduction, :category_id, :condition_id, :delivery_fee_id, :prefecture_id,
-                                   :ship_date_id, :price, :image).merge(user_id: current_user.id)
+      params.require(:lesson).permit( :name, :introduction,:delivery,:bring,:recipe,:flow,:eventday, :deadline,:prefecture_id, :capacity_id, :price, :image).merge(user_id: current_user.id)
     end
   
     def set_action

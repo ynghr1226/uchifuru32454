@@ -1,0 +1,88 @@
+<%= render "shared/header" %>
+
+
+<div class="item-show">
+  <div class="user-box">
+  <p class="user-title">マイページ</p>
+   
+   <%# ここから開催イベント %>
+    <div>開催イベント</div>
+    <div class="user-content">
+    <ul class='item-lists'>
+    <% if @lessons.present? %>
+      <% @lessons.each do |lesson|%>
+        <li class='list'>
+          <%= link_to  lesson_path(lesson.id), method: :get do  %>
+            <div class='item-img-content'>
+              <%= image_tag lesson.image, class: "item-img" %>
+            </div>
+            <div class='item-info'>
+              <h3 class='item-name'>
+                <%= lesson.name %>
+              </h3>
+              <div class='item-price'>
+                <span><%= lesson.price %>円<br><%= lesson.eventday %></span>
+                <div class='star-btn'>
+                  <%= image_tag "star.png", class:"star-icon" %>
+                  <span class='star-count'>0</span>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    <% end %>
+    </ul>
+      </div>
+    <%# ここまで開催イベント %>
+
+
+
+
+    <%# ここから開催イベント %>
+    <div>参加イベント</div>
+    <div class="user-content">
+    <ul class='item-lists'>
+    <% if @orders.present? %>
+      <% @orders.each do |order|%>
+        <li class='list'>
+          <%= link_to  lesson_path(order.lesson.id), method: :get do  %>
+            <div class='item-img-content'>
+              <%= image_tag order.lesson.image, class: "item-img" %>
+            </div>
+            <div class='item-info'>
+              <h3 class='item-name'>
+                <%= order.lesson.name %>
+              </h3>
+              <div class='item-price'>
+                <span><%= order.lesson.price %>円<br><%= order.lesson.eventday %></span>
+                <div class='star-btn'>
+                  <%= image_tag "star.png", class:"star-icon" %>
+                  <span class='star-count'>0</span>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    <% end %>
+    </ul>
+      </div>
+    <%# ここまで開催イベント %>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  
+ 
+  <%= render "shared/footer" %>

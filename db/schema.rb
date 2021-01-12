@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_07_074228) do
+ActiveRecord::Schema.define(version: 2021_01_12_031858) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -46,15 +46,28 @@ ActiveRecord::Schema.define(version: 2021_01_07_074228) do
     t.index ["order_id"], name: "index_adresses_on_order_id"
   end
 
+  create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "lesson_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["lesson_id"], name: "index_favorites_on_lesson_id"
+    t.index ["user_id", "lesson_id"], name: "index_favorites_on_user_id_and_lesson_id", unique: true
+    t.index ["user_id"], name: "index_favorites_on_user_id"
+  end
+
   create_table "lessons", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.text "introduction", null: false
-    t.integer "category_id", null: false
-    t.integer "condition_id", null: false
-    t.integer "delivery_fee_id", null: false
     t.integer "prefecture_id", null: false
-    t.integer "ship_date_id", null: false
     t.integer "price", null: false
+    t.text "delivery", null: false
+    t.text "bring", null: false
+    t.text "recipe", null: false
+    t.text "flow", null: false
+    t.string "eventday", null: false
+    t.string "deadline", null: false
+    t.integer "capacity_id", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -87,6 +100,8 @@ ActiveRecord::Schema.define(version: 2021_01_07_074228) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "adresses", "orders"
+  add_foreign_key "favorites", "lessons"
+  add_foreign_key "favorites", "users"
   add_foreign_key "lessons", "users"
   add_foreign_key "orders", "lessons"
   add_foreign_key "orders", "users"
