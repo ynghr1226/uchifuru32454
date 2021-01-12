@@ -70,6 +70,37 @@
       </div>
     <%# ここまで開催イベント %>
 
+    <%# ここからお気に入りイベント %>
+    <div>お気に入りイベント</div>
+    <div class="user-content">
+    <ul class='item-lists'>
+    <% if @favorites.present? %>
+      <% @favorites.each do |favorite|%>
+        <li class='list'>
+          <%= link_to  lesson_path(favorite.lesson.id), method: :get do  %>
+            <div class='item-img-content'>
+              <%= image_tag favorite.lesson.image, class: "item-img" %>
+            </div>
+            <div class='item-info'>
+              <h3 class='item-name'>
+                <%= favorite.lesson.name %>
+              </h3>
+              <div class='item-price'>
+                <span><%= favorite.lesson.price %>円<br><%= favorite.lesson.eventday %></span>
+                <div class='star-btn'>
+                  <%= image_tag "star.png", class:"star-icon" %>
+                  <span class='star-count'>0</span>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    <% end %>
+    </ul>
+      </div>
+    <%# ここまでお気に入りイベント %>
+
 
 
 

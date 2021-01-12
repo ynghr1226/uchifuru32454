@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: "lessons#index"
   resources :lessons do
     resources :orders, only: [:index,:create]
+    resources :favorites, only: [:create, :destroy]
+   
   end
-  resources :users
+  resources :users 
 end
