@@ -3,6 +3,6 @@ class Order < ApplicationRecord
   
     belongs_to :user
     belongs_to :lesson
-    has_one :adress
+    has_one :adress, dependent: :destroy
   end
   
