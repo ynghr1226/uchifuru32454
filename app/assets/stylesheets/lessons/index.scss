@@ -37,7 +37,7 @@ a {
 
 /* line 35, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .concept-title {
-  font-size: 30px;
+  font-size: 4vh;
   padding-top: 100px;
   padding-bottom: 15px;
   font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
@@ -50,6 +50,7 @@ a {
   padding-top: 10px;
   padding-bottom: 40px;
   color: #aaaaaa;
+  text-align: center;
   font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
 }
 
@@ -87,7 +88,7 @@ a {
 /* line 83, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .select-reason-contents {
   padding: 5vh 15vw;
-  background-color: #e7e6e0;
+  background-color: #f1f0e8;;
   text-align: center;
 }
 
@@ -118,6 +119,7 @@ a {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 100px;
 }
 
 /* line 88, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
@@ -132,7 +134,7 @@ a {
 .reason-list-text {
   /* font-weight: bold; */
   color: #333333;
-  font-size: 22px;
+  font-size: 3vh;
   line-height: 50px;
   font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
 }
@@ -146,8 +148,7 @@ a {
 /* line 116, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 /* line 136, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .reason-list-description {
-  font-size: 15px;
-  margin-top: 20px;
+  font-size: 2vh;
   color: #333333;
 }
 
@@ -174,7 +175,7 @@ a {
 /* line 140, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 /* line 161, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .ad-title {
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 2vh;
   font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
 }
@@ -313,7 +314,6 @@ a {
 .item-lists > .list {
   width: 37vh;
   padding: 1vw;
-  background-color: #FFF;
 }
 
 /* line 254, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
@@ -333,62 +333,48 @@ a {
 /* line 300, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .sold-out {
   position: absolute;
-  top: 40%;
-  width: 100%;
+  top: 0;
+  width: 10vh;
   text-align: center;
   background-color: crimson;
-  transform: skewY(-10deg);
+  font-size: 2.5vh;
 }
 
 /* line 272, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 /* line 310, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .sold-out > span {
   color: #FFF;
-  font-size: 45px;
   font: bold;
 }
 
 /* line 279, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 /* line 317, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-info {
-  background-color: #FFF;
-  color: black;
+  color:#333333;
   padding: 1vw;
 }
 
 /* line 285, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 /* line 324, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-name {
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 /* line 289, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 /* line 329, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-price {
-  font-size: 1.5vh;
+  font-size: 1.7vh;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 296, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-/* line 336, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-.star-btn {
-  display: flex;
-  align-items: center;
+.event-contents{
+background-color: #f1f0e8;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10vh 0;
 }
 
-/* line 301, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-/* line 342, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-.star-icon {
-  height: 2vh;
-  width: 2vh;
-  margin-right: 0.5vw;
-}
-
-/* line 307, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-/* line 349, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-.star-count {
-  font-size: 2vh;
-}
 
 /* //商品一覧 */

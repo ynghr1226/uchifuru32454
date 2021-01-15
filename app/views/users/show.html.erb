@@ -3,12 +3,12 @@
 
 <div class="item-show">
   <div class="user-box">
-  <p class="user-title">マイページ</p>
+  <p class="user-title">MY PAGE</p>
    
    <%# ここから開催イベント %>
     <div>開催イベント</div>
     <div class="user-content">
-    <ul class='item-lists'>
+    <ul class='user-lists'>
     <% if @lessons.present? %>
       <% @lessons.each do |lesson|%>
         <li class='list'>
@@ -22,10 +22,6 @@
               </h3>
               <div class='item-price'>
                 <span><%= lesson.price %>円<br><%= lesson.eventday %></span>
-                <div class='star-btn'>
-                  <%= image_tag "star.png", class:"star-icon" %>
-                  <span class='star-count'>0</span>
-                </div>
               </div>
             </div>
           <% end %>
@@ -39,10 +35,10 @@
 
 
 
-    <%# ここから開催イベント %>
+    <%# ここから参加イベント %>
     <div>参加イベント</div>
     <div class="user-content">
-    <ul class='item-lists'>
+    <ul class='user-lists'>
     <% if @orders.present? %>
       <% @orders.each do |order|%>
         <li class='list'>
@@ -56,10 +52,6 @@
               </h3>
               <div class='item-price'>
                 <span><%= order.lesson.price %>円<br><%= order.lesson.eventday %></span>
-                <div class='star-btn'>
-                  <%= image_tag "star.png", class:"star-icon" %>
-                  <span class='star-count'>0</span>
-                </div>
               </div>
             </div>
           <% end %>
@@ -68,20 +60,7 @@
     <% end %>
     </ul>
       </div>
-    <%# ここまで開催イベント %>
-
-    
-
-
-
-
-
-
-
-
-
-
-
+    <%# ここまで参加イベント %>
 
   </div>
 </div>

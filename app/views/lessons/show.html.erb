@@ -24,12 +24,11 @@
       </span>
     </div>
 
-    
+  <div class="edit-contents">
   <%unless @stock >= @lesson.capacity.id %>
   <% if user_signed_in? %>
       <% if current_user.id == @lesson.user_id  %>
         <%= link_to 'イベントの編集', edit_lesson_path(@lesson.id), method: :get, class: "item-red-btn" %>
-        <p class='or-text'>or</p>
         <%= link_to '削除', lesson_path(@lesson.id), method: :delete, class:'item-destroy' %>
         <%# 商品が売れていない場合はこちらを表示しましょう %>
         <% else %>
@@ -40,6 +39,7 @@
       <% end %>
     <% end %>
     <% end%>
+    </div>
     
 
     <%# イベント詳細 %>
@@ -65,11 +65,11 @@
         </tr>
         <tr>
           <th class="detail-item">申込締切日</th>
-          <td class="detail-value"><%= "@lesson.deadline" %></td>
+          <td class="detail-value"><%= @lesson.deadline %></td>
         </tr>
         <tr>
           <th class="detail-item">定員人数</th>
-          <td class="detail-value"><%= "@lesson.capacity.id" %></td>
+          <td class="detail-value"><%= @lesson.capacity.name %></td>
         </tr>
         <tr>
           <th class="detail-item">提供地域</th>

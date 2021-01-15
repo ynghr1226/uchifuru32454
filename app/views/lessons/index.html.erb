@@ -74,16 +74,16 @@ Here is an experience that will satisfy your mind and body
   <%# 画面中央の「会員数日本一位」帯部分 %>
   <div class='ad-contents'>
     <h2 class='ad-title'>
-      会員数日本一位
+      美味しい出会い
     </h2>
     <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
+      忙しくて中々旅行に行けない今。
     </p>
     <p class='ad-explain'>
-      出品・購入回数も業界最多です！
+      美味しいものを皆で食べたい貴方。
     </p>
     <p class='ad-explain'>
-      ほしかったあの商品に出会えるかもしれません。
+      UCHIFURUで全部手に入るかもしれません。
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
@@ -94,9 +94,13 @@ Here is an experience that will satisfy your mind and body
 
   
 
-  <div class='item-contents'>
-    <h2 class='title'>ピックアップカテゴリー</h2>
-    <%= link_to '新規投稿商品', "#", class: "subtitle" %>
+  <div class='event-contents'>
+    <h2 class='concept-title'>開催イベント</h2>
+   <p class ="concept-subtitle">
+
+Let's connect with everyone through "delicious".<br>
+Here is an experience that will satisfy your mind and body
+  </p>
     <ul class='item-lists'>
 
       <%# 商品一覧 %>
@@ -112,7 +116,7 @@ Here is an experience that will satisfy your mind and body
               <% @stock = Order.where(lesson_id: lesson.id).count %>
               <%if @stock >= lesson.capacity.id %>
               <div class='sold-out'>
-                <span>Sold Out!!</span>
+                <span>満員</span>
               </div>
               <% end %>
               <%# 定員オーバーの場合、売切表示 %>
@@ -125,10 +129,7 @@ Here is an experience that will satisfy your mind and body
               </h3>
               <div class='item-price'>
                 <span><%= lesson.price %>円<br><%= lesson.eventday %></span>
-                <div class='star-btn'>
-                  <%= image_tag "star.png", class:"star-icon" %>
-                  <span class='star-count'>0</span>
-                </div>
+                
               </div>
             </div>
           <% end %>
@@ -144,13 +145,11 @@ Here is an experience that will satisfy your mind and body
         <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
         <div class='item-info'>
           <h3 class='item-name'>
-            商品を出品してね！
+            イベントを開催しよう！
           </h3>
           <div class='item-price'>
             <span>99999999円<br>(税込み)</span>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
+            
             </div>
           </div>
         </div>

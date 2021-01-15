@@ -2,6 +2,8 @@
 
 
 
+
+
 .item-show {
   background-color: #f8f8f8;
   width: 100vw;
@@ -70,12 +72,14 @@
 
 .item-red-btn {
   text-align: center;
-  background-color: #ee7b96;
-  font-size: 24px;
-  font-weight: bold;
+  background-color: #FFA500;
+  font-size: 12px;
+  /* font-weight: bold; */
   color: #FFF;
   margin: 20px 0px;
-  padding: 2vh 100px;
+  padding: 2vh 50px;
+  margin-right: 10px;
+  /* text-align: center; */
 }
 
 .or-text {
@@ -85,10 +89,11 @@
 .item-destroy {
   background-color: lightgray;
   text-align: center;
-  font-size: 24px;
+  font-size: 12px;
   color: black;
   margin: 20px 0px;
-  padding: 2vh 10vw;
+  padding: 2vh 5vw;
+  display: block;
 }
 
 .item-explain-box {
@@ -242,4 +247,13 @@ font-size:15px;
 .user-title{
   margin-bottom:30px;
   font-size: 20px;
+  font-family: serif;
+  color:#FFA500;
+  font-weight:bold;
+}
+
+.edit-contents{
+  /* border:1px solid black; */
+  display: flex;
+  justify-content: space-between;
 }

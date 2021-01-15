@@ -32,8 +32,9 @@
   width: 100vw;
   padding: 5vh 0;
   color: #FFF;
-  background-color: #272727;
+  background-color: #ff9900;
   text-align: center;
+  z-index: 0;
 }
 
 .footer-contents {
@@ -47,19 +48,18 @@
 }
 
 .footer-content-head {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 .footer-link {
-  color: #FFF;
+  color: #f8e2cb;
   font-size: 12px;
   line-height: 30px;
 }
 
 .logo-white {
-  width: 20vh;
+  width: 30vh;
   vertical-align: bottom;
 }
 
