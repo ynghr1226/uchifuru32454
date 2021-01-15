@@ -12,7 +12,6 @@ def index
 end
 
 def create
-
   @order_adress = OrderAdress.new(order_params)
   if @order_adress.valid?
     pay_lesson

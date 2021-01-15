@@ -3,16 +3,18 @@
   
   <div class='nav'>
     <div class='search-bar-contents'>
-    <%= link_to image_tag("furima-logo-color.png", class:"furima-icon"), "/" %>
+    <%= link_to image_tag("logo.png", class:"furima-icon"), "/" %>
   </div>
     <ul class='lists-right'>
       <% if user_signed_in?%>
       <li><%= link_to current_user.name, "/users/#{current_user.id}", class: "user-nickname" %></li> 
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %> </li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
       <li><%= link_to 'ログイン', user_session_path, class: "login" %></li>
       <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
       <% end %>
+      <li><%= link_to 'イベント開催', new_lesson_path, class: "newlesson" %></li>
+
       <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐しましょう%>
     </ul>
   </div>

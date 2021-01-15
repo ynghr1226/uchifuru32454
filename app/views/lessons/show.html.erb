@@ -80,19 +80,7 @@
    
      
     
-     <%# お気に入りボタン %>
-     <% unless current_user.id == @lesson.user.id%>
-    <div class="option">
-      <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <div class="favorite-btn<%= @lesson.id %>">
-  <%= render 'favorites/favorite', lesson: @lesson %>
-    </div>
-      </div>
-    </div>
-  </div>
-  <% end %>
-   <%# お気に入りボタン %>
+    
 
 
   <%# /商品の概要 %>

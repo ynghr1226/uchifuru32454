@@ -5,11 +5,39 @@
   <div class='title-contents'></div>
   <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
 
+  <%# コンセプト %>
+  <div class="concept">
+  <h2 class="concept-title">
+  「美味しい」で、一緒に繋がろう。
+  </h2>
+  <p class ="concept-subtitle">
+
+Let's connect with everyone through "delicious".<br>
+Here is an experience that will satisfy your mind and body
+  </p>
+
+  <div class="concept-information">
+  新しい食体験を通じて、<br>
+  人に出会い、文化を知り、地域で繋がる。<br>
+  オンラインでどこからでも参加可能な料理教室と<br>
+  地域のとれたて食材で食卓を共有。<br>
+  料理教室の先生は食材提供して下さる地域の皆様。<br>
+  好きが人を繋げる。<br>
+  ここにしかないワクワクを体験しよう。
+  </div>
+</div>
+  <%# コンセプト %>
   <%# FURIMAが選ばれる3つの理由部分 %>
   <div class='select-reason-contents'>
-    <h2 class='title'>
-      お家にご当地届けます
+    <h2 class='concept-title'>
+      「お家にご当地」で、繋がろう。
     </h2>
+    <p class ="concept-subtitle">
+
+Let's connect with everyone through "delicious".<br>
+Here is an experience that will satisfy your mind and body
+  </p>
+
     <ul class='reason-lists'>
       <li class='list'>
         <%= image_tag "furima-intro01.png", class:"list-pict" %>
@@ -24,7 +52,7 @@
       <li class='list'>
         <%= image_tag "furima-intro02.png", class:"list-pict" %>
         <h3 class='reason-list-text'>
-          一緒に料理
+          一緒に作る
         </h3>
         <p class='reason-list-description'>
           めんどくさい入力は必要なく、検索も購入もスムーズ！
@@ -33,7 +61,7 @@
       <li class='list'>
         <%= image_tag "furima-intro03.png", class:"list-pict" %>
         <h3 class='reason-list-text'>
-          皆んなで食べる
+          一緒に食べる
         </h3>
         <p class='reason-list-description'>
           10%でお得に出品&購入！
@@ -133,8 +161,5 @@
   </div>
   <%# /商品一覧 %>
 </div>
-<%= link_to( new_lesson_path, class: 'purchase-btn') do %>
-  <span class='purchase-btn-text'>出品する</span>
-  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
-<% end %>
+
 <%= render "shared/footer" %>

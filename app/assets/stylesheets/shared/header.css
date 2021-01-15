@@ -17,8 +17,9 @@
 }
 
 .furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
+  width: 14vw;
+  /* margin-right: 10vw; */
+  min-width: 180px;
 }
 
 .search-form {
@@ -75,7 +76,8 @@
 .lists-right {
   display: flex;
   list-style: none;
-  align-items: flex-end;
+  align-items: center;
+  font-size: 14px;
 }
 
 
@@ -83,7 +85,6 @@
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
-  font-weight: bold;
 }
 
 
@@ -102,4 +103,12 @@
 .sign-up {
   text-decoration: none;
   color: #333333;
+}
+
+.newlesson{
+    margin-left: 20px;
+    padding: 5px 20px;
+    background-color: orange;
+    border-radius: 3px;
+    color: #ffffff;
 }

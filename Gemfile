@@ -59,6 +59,10 @@ group :test do
   gem 'webdrivers'
 end
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
@@ -67,10 +71,8 @@ gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem 'pry-rails'
 gem 'payjp'
-gem 'jquery-rails'
+# gem 'jquery-rails'
 gem "aws-sdk-s3", require: false
 
-group :production do
-  gem 'unicorn', '5.4.1'
-end
+
 

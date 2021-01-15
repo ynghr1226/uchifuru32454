@@ -1,19 +1,22 @@
 @charset "UTF-8";
 /* line 1, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 4, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 a {
   text-decoration: none;
 }
 
 /* line 5, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 9, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .main {
-  background: #f8f8f8;
+  background: #ffffff;
 }
 
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 /* line 10, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 15, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .title-contents {
   width: 100vw;
-  background-image: image-url('header.png');
+  background-image: url(/assets/header-210ffb0ecf603d688576c2509749fd0a7fe8d367b8ffe3a86ca23a4e7d16a622.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -27,31 +30,53 @@ a {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-/* line 25, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-.service-title {
-  font-size: 8vh;
-  margin: 0 auto;
+/* line 31, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+.concept {
+  text-align: center;
 }
 
-/* line 29, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
-.service-explain {
-  font-size: 2.5vh;
-  line-height: 40px;
+/* line 35, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+.concept-title {
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
+}
+
+/* line 44, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+.concept-subtitle {
+  font-size: 12px;
+  letter-spacing: .2rem;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  color: #aaaaaa;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
+}
+
+/* line 55, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+.concept-information {
+  font-size: 14px;
+  letter-spacing: .3rem;
+  margin-bottom: 100px;
+  line-height: 2em;
 }
 
 /* line 34, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 64, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .store-btn {
   display: flex;
   margin-top: 24px;
 }
 
 /* line 39, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 70, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .apple-btn {
   margin-right: 1vw;
   height: 9vh;
 }
 
 /* line 44, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 76, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .google-btn {
   height: 9vh;
 }
@@ -59,12 +84,15 @@ a {
 /* //画面上部の「人生を変えるフリマアプリ」帯部分 */
 /* FURIMAが選ばれる3つの理由部分 */
 /* line 51, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 83, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .select-reason-contents {
   padding: 5vh 15vw;
-  background-color: #fff;
+  background-color: #e7e6e0;
+  text-align: center;
 }
 
 /* line 55, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 90, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .select-reason-contents > .title {
   text-align: center;
   font-size: 3.5vh;
@@ -73,16 +101,17 @@ a {
   position: relative;
 }
 
-
-
 /* line 74, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 101, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .reason-lists {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: yu-mincho;
 }
 
 /* line 80, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 108, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .reason-lists > .list {
   width: 33vh;
   display: flex;
@@ -92,73 +121,87 @@ a {
 }
 
 /* line 88, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 117, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .list-pict {
   margin-bottom: 20px;
   width: 100%;
 }
 
-
 /* line 106, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 124, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .reason-list-text {
-  font-weight: bold;
-  font-size: 24px;
+  /* font-weight: bold; */
+  color: #333333;
+  font-size: 22px;
   line-height: 50px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
 }
 
 /* line 112, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 131, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .reason-list-blue-text {
   color: #3ccace;
 }
 
 /* line 116, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 136, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .reason-list-description {
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 20px;
+  color: #333333;
 }
 
 /* //FURIMAが選ばれる3つの理由部分 */
 /* 画面中央の「会員数日本一位」帯部分*/
 /* line 125, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 144, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .ad-contents {
-  width: 100vw;
-  background-image: url(/assets/furima-header02-5042a3aa7eef6dd93330080028e3a781daf47c390c00a4fb5d7e7b06caae68c9.png);
+  width: 100%;
+  background-image: url(/assets/concept-4407a6736ebe211d31f35c19fe5ccfe2649d23a0cf92c49c636dd91dfc9947aa.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: #333333;
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.9); */
+  height: 580px;
 }
 
 /* line 140, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 161, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .ad-title {
   font-size: 5vh;
   margin-bottom: 2vh;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", serif;
 }
 
 /* line 145, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 168, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .ad-explain {
   font-size: 2.5vh;
   line-height: 30px;
 }
 
 /* line 150, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 174, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .store-btn {
   display: flex;
   margin-top: 24px;
 }
 
 /* line 155, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 180, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .apple-btn {
   margin-right: 1vw;
   height: 9vh;
 }
 
 /* line 160, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 186, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .google-btn {
   height: 9vh;
 }
@@ -166,11 +209,13 @@ a {
 /* //画面中央の「会員数日本一位」帯部分 */
 /* FURIMAの特徴 */
 /* line 167, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 193, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-contents {
   padding: 5vh 15vw;
 }
 
 /* line 171, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 198, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-contents > .title {
   text-align: center;
   font-size: 3.5vh;
@@ -180,6 +225,7 @@ a {
 }
 
 /* line 179, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 207, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-contents > .title::after {
   content: '';
   width: 70px;
@@ -192,6 +238,7 @@ a {
 }
 
 /* line 190, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 219, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-lists {
   display: flex;
   justify-content: space-between;
@@ -199,6 +246,7 @@ a {
 }
 
 /* line 196, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 226, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-lists > .list {
   width: 33vh;
   display: flex;
@@ -207,6 +255,7 @@ a {
 }
 
 /* line 203, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 234, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-list-text {
   font-weight: bold;
   font-size: 22px;
@@ -214,6 +263,7 @@ a {
 }
 
 /* line 209, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 241, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .feature-list-description {
   font-size: 18px;
   margin-top: 20px;
@@ -222,6 +272,7 @@ a {
 /* //FURIMAの特徴 */
 /* 商品一覧 */
 /* line 218, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 249, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-contents {
   background-color: #FFF;
   display: flex;
@@ -231,6 +282,7 @@ a {
 }
 
 /* line 226, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 258, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-contents > .title {
   font-size: 5vh;
   line-height: 1.4;
@@ -238,6 +290,7 @@ a {
 }
 
 /* line 232, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 265, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-contents > .subtitle {
   font-size: 3vh;
   margin: 1vh 0;
@@ -247,6 +300,7 @@ a {
 }
 
 /* line 240, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 274, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-lists {
   width: 100vw;
   display: flex;
@@ -255,6 +309,7 @@ a {
 }
 
 /* line 247, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 282, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-lists > .list {
   width: 37vh;
   padding: 1vw;
@@ -262,17 +317,20 @@ a {
 }
 
 /* line 254, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 289, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-img-content {
   position: relative;
 }
 
 /* line 258, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 294, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-img {
   width: 33vh;
   height: 20vh;
 }
 
 /* line 263, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 300, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .sold-out {
   position: absolute;
   top: 40%;
@@ -283,6 +341,7 @@ a {
 }
 
 /* line 272, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 310, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .sold-out > span {
   color: #FFF;
   font-size: 45px;
@@ -290,6 +349,7 @@ a {
 }
 
 /* line 279, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 317, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-info {
   background-color: #FFF;
   color: black;
@@ -297,11 +357,13 @@ a {
 }
 
 /* line 285, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 324, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-name {
   font-size: 2.5vh;
 }
 
 /* line 289, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 329, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .item-price {
   font-size: 1.5vh;
   display: flex;
@@ -309,12 +371,14 @@ a {
 }
 
 /* line 296, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 336, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .star-btn {
   display: flex;
   align-items: center;
 }
 
 /* line 301, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 342, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .star-icon {
   height: 2vh;
   width: 2vh;
@@ -322,6 +386,7 @@ a {
 }
 
 /* line 307, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
+/* line 349, /Users/groupdandy/projects/uchifuru32454/app/assets/stylesheets/lessons/index.scss */
 .star-count {
   font-size: 2vh;
 }

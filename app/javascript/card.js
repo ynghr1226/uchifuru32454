@@ -1,3 +1,4 @@
+console.log("hoge");
 const pay = () => {
     Payjp.setPublicKey(process.env.PAYJP_PUBLIC_KEY);// PAY.JPテスト公開鍵
     const form = document.getElementById("order-form")//購入フォーム全体を呼び出し
