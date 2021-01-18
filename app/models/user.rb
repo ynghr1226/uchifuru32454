@@ -19,5 +19,6 @@ class User < ApplicationRecord
       
         has_many :lessons
         has_many :orders
+        has_many :messages
 end
 

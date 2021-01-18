@@ -20,6 +20,8 @@ class LessonsController < ApplicationController
     end
   
     def show
+      @message = Message.new
+      @messages = @lesson.messages.includes(:user).order("created_at DESC")
     end
   
     def edit

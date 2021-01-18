@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_031858) do
+ActiveRecord::Schema.define(version: 2021_01_17_095214) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -46,16 +46,6 @@ ActiveRecord::Schema.define(version: 2021_01_12_031858) do
     t.index ["order_id"], name: "index_adresses_on_order_id"
   end
 
-  create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "lesson_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["lesson_id"], name: "index_favorites_on_lesson_id"
-    t.index ["user_id", "lesson_id"], name: "index_favorites_on_user_id_and_lesson_id", unique: true
-    t.index ["user_id"], name: "index_favorites_on_user_id"
-  end
-
   create_table "lessons", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.text "introduction", null: false
@@ -72,6 +62,16 @@ ActiveRecord::Schema.define(version: 2021_01_12_031858) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_lessons_on_user_id"
+  end
+
+  create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "text"
+    t.bigint "user_id"
+    t.bigint "lesson_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["lesson_id"], name: "index_messages_on_lesson_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -100,9 +100,9 @@ ActiveRecord::Schema.define(version: 2021_01_12_031858) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "adresses", "orders"
-  add_foreign_key "favorites", "lessons"
-  add_foreign_key "favorites", "users"
   add_foreign_key "lessons", "users"
+  add_foreign_key "messages", "lessons"
+  add_foreign_key "messages", "users"
   add_foreign_key "orders", "lessons"
   add_foreign_key "orders", "users"
 end
